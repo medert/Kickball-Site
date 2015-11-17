@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Names of Players</title>
+    </head>
+
+  <body>
+    <%@teams.each do |team, players|%>
+      <%if team == @team_name%>
+        <h1><%= team%></h1>
+        <ul>
+          <%players.each do |position, player| %>
+          <li><%= player %></li>
+          <% end %>
+        <% end %>
+      <% end %>
+    </ul>
+  </body>
+</html>

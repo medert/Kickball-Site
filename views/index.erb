@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kickball Teams</title>
+    </head>
+
+  <body>
+    <h1>List of Team</h1>
+
+    <ul>
+      <% @team_names.each do |team| %>
+        <li><a href ="/teams/<%= team %>"><%= team %></a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
